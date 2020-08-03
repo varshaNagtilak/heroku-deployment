@@ -1,0 +1,10 @@
+<h1>Demo App for Heroku deployment</h1>
+<input type="text" #fname name="test" (keyup.enter)="keyUpEvent(fname.value)"/> 
+<app-favouirt [title]="title" (change)="showTitle($event)">
+
+</app-favouirt>
+<app-favouirt>
+    <div class="heading">card heading</div>
+    <div class="body">card body</div>
+</app-favouirt>
+<h1>In Parent component: {{title}}</h1>
